@@ -1,0 +1,9 @@
+@import '_variables';
+
+// Load fonts from Google Fonts
+@import url($header-font-url);
+@import url($body-font-url);
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font-family;
+}
