@@ -1,6 +1,17 @@
 @import '../styles/variables';
 
-.header-full {
-  background: $brand-dark;
+.fs-header-full {
+  background: $color-brand-dark;
   height: 84px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+
+  .fs-header-logo {
+
+  }
+
+  .fs-header-nav {
+    margin-left: auto;
+  }
 }

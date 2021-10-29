@@ -1,0 +1,82 @@
+@import "../styles/variables";
+
+@mixin btn-filled($map) {
+  background-color: map-get($map, 'background-default');
+  color: map-get($map, 'foreground');
+  border-color: map-get($map, 'border-default');
+
+  &:hover {
+    background-color: map-get($map, 'background-hover');
+    border-color: map-get($map, 'border-hover');
+  }
+
+  &:focus {
+    background-color: map-get($map, 'background-focus');
+    border-color: map-get($map, 'border-focus');
+  }
+
+  &:active {
+    background-color: map-get($map, 'background-active');
+    border-color: map-get($map, 'border-active');
+  }
+}
+
+.fs-btn {
+  border-radius: 4px;
+  font-family: $body-font-family;
+  font-weight: 700;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  transition: background-color ease-in-out 150ms;
+
+  &.fs-btn-filled {
+    text-transform: uppercase;
+
+    &.fs-btn-primary {
+      @include btn-filled($btn-primary-filled);
+    }
+
+    &.fs-btn-success {
+      @include btn-filled($btn-success-filled);
+    }
+  }
+
+  &.fs-btn-outline {
+    text-transform: uppercase;
+  }
+
+  &.fs-btn-ghost {
+
+  }
+
+  &.fs-btn-tiny {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 6px 12px;
+  }
+
+  &.fs-btn-small {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 8px 16px;
+  }
+
+  &.fs-btn-medium {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 20px;
+  }
+
+  &.fs-btn-large {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 20px;
+  }
+
+  &.fs-btn-giant {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 24px;
+  }
+}

@@ -3,7 +3,7 @@ import './HomeCarousel.scss';
 
 function HomeCarousel() {
   return (
-    <div className="home-carousel"></div>
+    <div className="fs-home-carousel"></div>
   );
 }
 

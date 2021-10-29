@@ -6,4 +6,52 @@ $header-font-family: 'Raleway', sans-serif;
 
 $body-bkgd: #EDF1F7;
 
-$brand-dark: #053333;
+$color-brand-dark: #053333;
+
+$color-primary: (
+  100: #cdfacd,
+  200: #9df6a6,
+  300: #69e682,
+  400: #42cd6c,
+  500: #11ac4f,
+  600: #0c9350,
+  700: #087b4d,
+  800: #056347,
+  900: #035242
+);
+
+$color-success: (
+  100: #ecfbd1,
+  200: #d5f7a5,
+  300: #b1e774,
+  400: #8cd04e,
+  500: #5cb21e,
+  600: #459915,
+  700: #31800f,
+  800: #206709,
+  900: #145505
+);
+
+$btn-primary-filled: (
+  'background-default': map-get($color-primary, 500),
+  'border-default': map-get($color-primary, 500),
+  'background-hover': map-get($color-primary, 400),
+  'border-hover': map-get($color-primary, 400),
+  'background-active': map-get($color-primary, 600),
+  'border-active': map-get($color-primary, 600),
+  'background-focus': map-get($color-primary, 700),
+  'border-focus': map-get($color-primary, 600),
+  'foreground': #fff
+);
+
+$btn-success-filled: (
+  'background-default': map-get($color-success, 500),
+  'border-default': map-get($color-success, 500),
+  'background-hover': map-get($color-success, 400),
+  'border-hover': map-get($color-success, 400),
+  'background-active': map-get($color-success, 600),
+  'border-active': map-get($color-success, 600),
+  'background-focus': map-get($color-success, 700),
+  'border-focus': map-get($color-success, 600),
+  'foreground': #fff
+);
