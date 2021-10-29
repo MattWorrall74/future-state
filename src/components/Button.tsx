@@ -6,7 +6,7 @@ interface ButtonProps {
   children?: React.ReactNode, 
   className?: string,
   disabled?: boolean,
-  style?: 'filled' | 'outline' | 'ghost',
+  type?: 'filled' | 'outline' | 'ghost',
   size?: 'tiny' | 'small' | 'medium' | 'large' | 'giant',
   variant?: 'basic' | 'primary' | 'success' | 'info' | 'warning' | 'danger' | 'control'
 }
@@ -14,7 +14,7 @@ interface ButtonProps {
 const classes = {
   base: 'fs-btn',
   disabled: 'fs-btn-disabled',
-  style: {
+  type: {
     filled: 'fs-btn-filled',
     outline: 'fs-btn-outline',
     ghost: 'fs-btn-ghost'
@@ -41,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
   children,
   className,
   disabled,
-  style,
+  type,
   size,
   variant
 }) => {
@@ -51,7 +51,7 @@ const Button: React.FC<ButtonProps> = ({
       type="button" 
       className={cls(`
         ${classes.base} 
-        ${classes.style[style || 'filled']}
+        ${classes.type[type || 'filled']}
         ${classes.size[size || 'medium']} 
         ${classes.variant[variant || 'primary']}
         ${disabled && classes.disabled} 

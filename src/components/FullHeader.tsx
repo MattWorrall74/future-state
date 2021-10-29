@@ -10,7 +10,7 @@ function FullHeader() {
         <a href="#"><img src={logo} alt="Future State" /></a>
       </div>
       <div className="fs-header-nav">
-        <Button style="filled" size="small" variant="primary">Get a Quote</Button>
+        <Button type="filled" size="small" variant="primary">Get a Quote</Button>
       </div>
     </header>
   );
