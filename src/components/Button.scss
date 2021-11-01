@@ -40,6 +40,18 @@
     &.fs-btn-success {
       @include btn-filled($btn-success-filled);
     }
+
+    &.fs-btn-info {
+      @include btn-filled($btn-info-filled);
+    }
+
+    &.fs-btn-warning {
+      @include btn-filled($btn-warning-filled);
+    }
+
+    &.fs-btn-danger {
+      @include btn-filled($btn-danger-filled);
+    }
   }
 
   &.fs-btn-outline {

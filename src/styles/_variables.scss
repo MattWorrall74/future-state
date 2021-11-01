@@ -6,8 +6,6 @@ $header-font-family: 'Raleway', sans-serif;
 
 $body-bkgd: #EDF1F7;
 
-$color-brand-dark: #053333;
-
 $color-primary: (
   100: #cdfacd,
   200: #9df6a6,
@@ -32,6 +30,45 @@ $color-success: (
   900: #145505
 );
 
+$color-info: (
+  100: #caf4fd,
+  200: #97e3fc,
+  300: #62c9f6,
+  400: #3baded,
+  500: #0084e2,
+  600: #0066c2,
+  700: #004ca2,
+  800: #003583,
+  900: #00266c
+);
+
+$color-warning: (
+  100: #fef6cb,
+  200: #feea98,
+  300: #fedb65,
+  400: #fdcc3f,
+  500: #fcb400,
+  600: #d89400,
+  700: #b57600,
+  800: #925b00,
+  900: #784800
+);
+
+$color-danger: (
+  100: #fce2d5,
+  200: #fabfac,
+  300: #f09281,
+  400: #e1675f,
+  500: #ce2f32,
+  600: #b12231,
+  700: #94172f,
+  800: #770e2c,
+  900: #62092a
+);
+
+$color-brand: map-get($color-primary, 500);
+$color-brand-dark: #053333;
+
 $btn-primary-filled: (
   'background-default': map-get($color-primary, 500),
   'border-default': map-get($color-primary, 500),
@@ -53,5 +90,41 @@ $btn-success-filled: (
   'border-active': map-get($color-success, 600),
   'background-focus': map-get($color-success, 700),
   'border-focus': map-get($color-success, 600),
+  'foreground': #fff
+);
+
+$btn-info-filled: (
+  'background-default': map-get($color-info, 500),
+  'border-default': map-get($color-info, 500),
+  'background-hover': map-get($color-info, 400),
+  'border-hover': map-get($color-info, 400),
+  'background-active': map-get($color-info, 600),
+  'border-active': map-get($color-info, 600),
+  'background-focus': map-get($color-info, 700),
+  'border-focus': map-get($color-info, 600),
+  'foreground': #fff
+);
+
+$btn-warning-filled: (
+  'background-default': map-get($color-warning, 500),
+  'border-default': map-get($color-warning, 500),
+  'background-hover': map-get($color-warning, 400),
+  'border-hover': map-get($color-warning, 400),
+  'background-active': map-get($color-warning, 600),
+  'border-active': map-get($color-warning, 600),
+  'background-focus': map-get($color-warning, 700),
+  'border-focus': map-get($color-warning, 600),
+  'foreground': #fff
+);
+
+$btn-danger-filled: (
+  'background-default': map-get($color-danger, 500),
+  'border-default': map-get($color-danger, 500),
+  'background-hover': map-get($color-danger, 400),
+  'border-hover': map-get($color-danger, 400),
+  'background-active': map-get($color-danger, 600),
+  'border-active': map-get($color-danger, 600),
+  'background-focus': map-get($color-danger, 700),
+  'border-focus': map-get($color-danger, 600),
   'foreground': #fff
 );

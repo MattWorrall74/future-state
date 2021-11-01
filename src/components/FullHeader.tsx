@@ -7,7 +7,7 @@ function FullHeader() {
   return (
     <header className="fs-header-full">
       <div className="fs-header-logo">
-        <a href="#"><img src={logo} alt="Future State" /></a>
+        <a href="/"><img src={logo} alt="Future State" /></a>
       </div>
       <div className="fs-header-nav">
         <Button type="filled" size="small" variant="primary">Get a Quote</Button>
