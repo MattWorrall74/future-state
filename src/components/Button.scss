@@ -59,7 +59,50 @@
   }
 
   &.fs-btn-ghost {
+    background-color: transparent;
+    border-color: transparent;
 
+    &:hover {
+      background-color: scale-color($color: map-get($color-basic, 600), $alpha: -92%);
+    }
+
+    &:active {
+      background-color: scale-color($color: map-get($color-basic, 600), $alpha: -84%);
+    }
+
+    &:focus {
+      background-color: scale-color($color: map-get($color-basic, 600), $alpha: -84%);
+      border-color: scale-color($color: map-get($color-basic, 600), $alpha: -60%);
+      box-shadow: 0 0 0 4px scale-color(map-get($color-basic, 600), $alpha: -84%);
+    }
+
+    &.fs-btn-default {
+      color: map-get($color-basic, 600);
+    }
+
+    &.fs-btn-primary {
+      color: map-get($color-primary, 500);
+    }
+
+    &.fs-btn-success {
+      color: map-get($color-success, 500);
+    }
+
+    &.fs-btn-info {
+      color: map-get($color-info, 500);
+    }
+
+    &.fs-btn-warning {
+      color: map-get($color-warning, 500);
+    }
+
+    &.fs-btn-danger {
+      color: map-get($color-danger, 500);
+    }
+
+    &:disabled {
+      color: scale-color($color: map-get($color-basic, 600), $alpha: -52%);
+    }
   }
 
   &.fs-btn-tiny {

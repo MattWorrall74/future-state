@@ -66,8 +66,26 @@ $color-danger: (
   900: #62092a
 );
 
+$color-basic: (
+  100: #fff,
+  200: #f7f9fc,
+  300: #edf1f7,
+  400: #e4e9f2,
+  500: #c5cee0,
+  600: #8f9bb3,
+  700: #2e3a59,
+  800: #222b45,
+  900: #192038,
+  1000: #151a30,
+  1100: #101426
+);
+
 $color-brand: map-get($color-primary, 500);
 $color-brand-dark: #053333;
+$color-text: map-get($color-basic, 800);
+
+$grid-gap: 30px;
+$grid-min-col-width: 50px;
 
 $btn-primary-filled: (
   'background-default': map-get($color-primary, 500),

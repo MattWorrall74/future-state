@@ -1,0 +1,14 @@
+.fs-content-body {
+  padding: 0 90px;
+}
+
+.fs-home-primary-cta {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button:last-of-type {
+    margin-top: 15px;
+  }
+}

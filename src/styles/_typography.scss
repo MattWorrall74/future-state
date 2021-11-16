@@ -4,6 +4,58 @@
 @import url($header-font-url);
 @import url($body-font-url);
 
-h1, h2, h3, h4, h5 {
+body, * {
+  font-family: $body-font-family;
+  color: $color-text;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
+  color: $color-text;
+  font-weight: 700;
+}
+
+h1, .fs-h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h2, .fs-h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3, .fs-h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h4, .fs-h4 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+h5, .fs-h5 {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+h6, .fs-h6 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p {
+  margin-bottom: 22px;
+}
+
+.fs-text-center {
+  text-align: center;
+}
+
+.fs-text-right {
+  text-align: right;
 }
